@@ -33,12 +33,13 @@ playBtn.addEventListener('click', () => {
         callingFunction = window.setInterval(stopWatch, 1000);
         playBtn.innerHTML = "&#x2016;";
         playBtn.classList.add('paused');
-    } else {
+    }
+    else {
         isCounting = false;
         window.clearInterval(callingFunction);
         playBtn.innerHTML = "&#9658;";
         playBtn.classList.remove('paused');
-    }
+    };
 });
 
 restartBtn.addEventListener('click', () => {

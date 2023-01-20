@@ -1,0 +1,44 @@
+:root {
+    --spacing: 30px;
+    --blur: 0px;
+    --color: plum;
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    gap: 50px;
+}
+
+span:first-child {
+    color: var(--color);
+}
+
+span:not(:first-child) {
+    font-size: 1.2rem;
+}
+
+input {
+    border-color: var(--color);
+    accent-color: var(--color);
+    border-radius: 5px;
+}
+
+img {
+    height: 300px;
+    width: 430px;
+    filter: blur(var(--blur));
+    margin-bottom: -5px;
+}
+
+.frame {
+    padding: var(--spacing);
+    background-color: var(--color);
+}
