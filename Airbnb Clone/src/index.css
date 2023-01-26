@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    height: 4.5rem;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding-left: 3rem;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 100;
+}
+
+nav img {
+    width: 8%;
+    min-width: 80px;
+}
+
+.grid {
+    height: 28rem;
+    display: grid;
+    padding-top: 8rem;
+
+    grid-template-columns: 7rem 7rem 7rem 7rem 7rem;
+    column-gap: 1.5rem;
+
+    grid-template-rows: 8rem 8rem 8rem 8rem 8rem 8rem 8rem;
+
+    align-content: center;
+    justify-content: center;
+}
+
+.grid img, .grid div {
+    width: 100%;
+}
+
+.box1 {
+    grid-column: 1;
+    grid-row: 3/5;
+    display: flex;
+    align-items: center;
+}
+
+.box2-1 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.box2-2 {
+    grid-column: 2;
+    grid-row: 3/5;
+    margin-top: 7.4rem;
+}
+
+.box3-1 {
+    grid-column: 3;
+    grid-row: 3/4;
+    margin-top: 2rem;
+}
+
+.box3-2 {
+    grid-column: 3;
+    grid-row: 4;
+    margin-top: 4.5rem;
+}
+
+.box4-1 {
+    grid-column: 4;
+    grid-row: 2;
+    margin-top: 7rem;
+}
+
+.box4-2 {
+    grid-column: 4;
+    grid-row: 4;
+    margin-top: 1.6rem;
+}
+
+.box5-1 {
+    grid-column: 5;
+    grid-row: 3;
+    margin-top: 1rem;
+}
+
+.box5-2 {
+    grid-column: 5;
+    grid-row: 4;
+    margin-top: 3.6rem;
+}
+
+.textos {
+    margin: 0rem 4rem;
+}
+
+.textos h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.3rem;
+}
+
+.textos p {
+    font-size: 2rem;
+    font-weight: 100;
+    width: 45%;
+}
+
+.slider {
+    padding-block: 4rem;
+    display: flex;
+    overflow: scroll;
+    gap: 2rem;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.card-image {
+    position: relative;
+}
+
+.card-image img {
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    background-color: white;
+    padding: .15rem .5rem;
+    border-radius: 3px;
+    top: .6rem;
+    left: .6rem;
+}
+
+.card {
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.card:first-child {
+    margin-left: 4rem;
+}
+
+.star {
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    margin-top: -5px;
+}
+
+.star p {
+    margin-top: 5px;
+}
+
+.star span {
+    color: rgb(171, 171, 171);
+}
+
+.title {
+    width: 16.5rem;
+}
+
+.bold {
+    font-weight: bold;
+}
